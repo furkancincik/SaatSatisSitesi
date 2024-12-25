@@ -1,0 +1,21 @@
+@model SaatSatisSitesi.Models.User
+
+<h1>Yeni Kullanıcı Ekle</h1>
+<form method="post">
+    <label>Ad:</label>
+    <input type="text" name="Name" required />
+    <br />
+    <label>Email:</label>
+    <input type="email" name="Email" required />
+    <br />
+    <label>Şifre:</label>
+    <input type="password" name="Password" required />
+    <br />
+    <label>Rol:</label>
+    <select name="Role">
+        <option value="User">User</option>
+        <option value="Admin">Admin</option>
+    </select>
+    <br />
+    <button type="submit">Kaydet</button>
+</form>
